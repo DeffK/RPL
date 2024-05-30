@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 14 - Management  Consulting Toolkit</title>
+        <title>Page 14 - Flipbook PBO Kelas XI</title>
 <style type="text/css">
 <!--
 body {
@@ -134,49 +134,37 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=14">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="../../Flipbook PBO.html#p=14">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 14 - Management  Consulting Toolkit</div>
+        <div id="content-top1">Page 14 - Flipbook PBO Kelas XI</div>
         <div id="content-top2">P. 14</div>
      </div>
      <div id="content-middle">
      	
      	  <div class="text-container">
     <div class="use-as-video cc-float-fix">
-      <a style="text-decoration: none;" href="../../index.html#p=14"><img src="../thumb/14.jpg" /></a>
+      <a style="text-decoration: none;" href="../../Flipbook PBO.html#p=14"><img src="../thumb/14.jpg" /></a>
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Kesimpulan
+    <pre style="white-space:pre-line"><code>4.  Get dan Set (Getter dan Setter)
 
+               variabel private hanya dapat diakses di dalam class yang sama (class luar tidak
 
+               memiliki akses ke sana). Namun, dimungkinkan untuk mengaksesnya jika
 
+               menyediakan methods ”get” and ”set” public. Methods ”get” mengembalikan nilai
 
-                       Enkapsulasi merupakan metode menyembunyikan data – data kelas suatu pemrograman
-               ke dalam suatu unit tertentu. Ini bertujuan untuk memberikan proteksi terhadap data agar tidak
+               variabel, dan methods ”set” menetapkan nilainya.
 
-               diakses oleh pihak luar tanpa izin.
+               Sintaks keduanya dimulai dengan ”get” atau ”set”, diikuti dengan nama variabel,
 
-                       Cara menerapkan Enkapsulasi dalam bahasa pemrograman terbilang sangat mudah.
-               Programer hanya perlu mengidentifikasi  data dan fungsi, lalu membuat kelas dengan metode
-
-               private dan public.
-                       Gunakan metode private untuk menyimpan data yang tidak bisa diakses oleh pihak lain.
-
-               Lalu gunakan metode public untuk mengakses dan mengubah data kelas.
-                       Menggunakan Enkapsulasi akan memberikan keuntungan. Pertama pengguna dapat
-
-               memodifikasi  data implementasi  internal kelas tanpa mempengaruhi baris kode lainnya.
-
-                       Kedua, pengguna dapat mengontrol dengan fleksibel terhadap askes ke data atau atribut
-               kelas. Selain itu juga dapat mengatur aturan tertentu untuk melakukan modifikasi  data saat
-
-               membuat kelas.
+               dengan huruf pertama dalam huruf besar.
 
 
 
@@ -200,27 +188,32 @@ function MM_swapImage() { //v3.0
 
 
 
+                           Getter dapat mengizinkan (membaca) akses ke variabel private.
+
+               public class Person {
+                 private String name; // private = restricted access
+
+                 // Getter
+                 public String getName() {
+                   return name;
+                 }
+
+                 // Setter
+                 public void setName(String newName) {
+                   this.name = newName;
+                 }
+               }
+               Penjelasan :
+
+               Methods ”get” mengembalikan nilai nama variabel. Methods ”set” mengambil
+               parameter (newName) dan menugaskannya ke variabel name. Keyword ”this”
+               digunakan untuk merujuk pada objek saat ini. Namun, karena variabel name
+               dideklarasikan sebagai private, kita tidak dapat mengaksesnya dari luar class ini.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                   10</code></pre>
+                                                                                                                   8</code></pre>
      	</div>
     
      </div>

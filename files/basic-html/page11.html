@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 11 - Management  Consulting Toolkit</title>
+        <title>Page 11 - Flipbook PBO Kelas XI</title>
 <style type="text/css">
 <!--
 body {
@@ -134,100 +134,76 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=11">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="../../Flipbook PBO.html#p=11">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 11 - Management  Consulting Toolkit</div>
+        <div id="content-top1">Page 11 - Flipbook PBO Kelas XI</div>
         <div id="content-top2">P. 11</div>
      </div>
      <div id="content-middle">
      	
      	  <div class="text-container">
     <div class="use-as-video cc-float-fix">
-      <a style="text-decoration: none;" href="../../index.html#p=11"><img src="../thumb/11.jpg" /></a>
+      <a style="text-decoration: none;" href="../../Flipbook PBO.html#p=11"><img src="../thumb/11.jpg" /></a>
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Contoh :
+    <pre style="white-space:pre-line"><code>Ini berfungsi dengan baik karena myPublicVar bersifat publik. Variabel yang
 
+               dilindungi ( myProtectedVar ) juga akan muncul karena kita mewarisi kelas lain
 
+               (dan kedua kelas berada dalam paket yang sama). Sekarang mari kita lihat
 
+               bagaimana keadaan berubah ketika kita mengakses variabel privat kita secara
 
+               langsung (myPrivateVar).
 
 
+               public class HelloWorld extends MyClass { // extending MyClass -
+               - to be able to access protected variables
+                   public static void main(String []args){
+                               MyClass myObject = new MyClass();
+                               System.out.println(myObject.myPrivateVar); //
+               trying to directly access private variable -- will result in
+               error
+                   }
+               }
+               Keluaran :
 
+               Error: myPrivateVar has private access in MyClass
+                               System.out.println(myObject.myPrivateVar); //
+               trying to directly access private variable -- will result in
+               error
+                                                         ^1 error
+               Seperti yang diharapkan, ini gagal. Hal ini karena hanya elemen kelas itu sendiri
 
+               yang dapat mengakses variabel private. Oleh karena itu, saatnya untuk
 
+               menambahkan fungsi pengambil ke MyClass (seperti yang kita lakukan
 
+               sebelumnya) dan memanggilnya melalui objek ( myObject ) untuk mendapatkan
 
+               nilai variabel private.
 
+               class MyClass {
+                   public int myPublicVar = 20;
+                   protected int myProtectedVar = 10;
+                   private int myPrivateVar = 30;
 
+                   public int getMyPrivateVar (){ // added (public) getter
+               function to access private var
+                       return this.myPrivateVar;
+                   }
+               }
 
 
 
 
-
-
-
-
-
-
-
-               Jika variabel tersebut dideklarasikan sebagai public, kita akan mendapatkan keluaran sebagai
-               berikut :
-
-
-
-
-               Namun, ketika mencoba mengakses variabel  private, maka mendapatkan kesalahan :
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               Sebagai gantinya, kita menggunakan methods getName() dan setName() untuk mengakses dan
-               memperbarui variabel :
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                   7</code></pre>
+                                                                                                                   5</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 32 - Management  Consulting Toolkit</title>
+        <title>Page 32 - Flipbook PBO Kelas XI</title>
 <style type="text/css">
 <!--
 body {
@@ -134,66 +134,64 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=32">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="../../Flipbook PBO.html#p=32">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 32 - Management  Consulting Toolkit</div>
+        <div id="content-top1">Page 32 - Flipbook PBO Kelas XI</div>
         <div id="content-top2">P. 32</div>
      </div>
      <div id="content-middle">
      	
      	  <div class="text-container">
     <div class="use-as-video cc-float-fix">
-      <a style="text-decoration: none;" href="../../index.html#p=32"><img src="../thumb/32.jpg" /></a>
+      <a style="text-decoration: none;" href="../../Flipbook PBO.html#p=32"><img src="../thumb/32.jpg" /></a>
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.  Polymoprhism
+    <pre style="white-space:pre-line"><code>Contoh lain:
 
-               Polymorphism berarti banyak bentuk, dan ini terjadi ketika memiliki  banyak class yang terkait
-               satu sama lain melalui inheritance. Inheritance memungkinkan untuk mewarisi attribute dan
+               class Vehicle {
 
-               methods dari class lain. polymorphism menggunakan methods tersebut untuk melakukan tugas-
+                 protected String brand = "Ford";        // attribute Vehicle
+                 public void honk() {                    // method Vehicle
 
-               tugas yang berbeda. Hal ini memungkinkan untuk melakukan satu tindakan dengan cara yang
-               berbeda. Bentuk yang dimaksud dapat diartikan sebagai isinya berbeda, parameternya berbeda,
-
-               dan tipe datanya berbeda. Polymorphism pada java ada dua macam :
-                    •  Static polymorphism (Polimorfisme  statis) yang hanya terjadi dalam satu class;
-
-                    •  Dynamic polymorphism (Polimorfisme  dinamis) terjadi pada terhubung dengan class
-
-                        lain seperti inheritance.
-               Beda dari keduanya adalah pada cara pembuatan polimorfismenya.
-
-               Polymorphism static menggunakan method overloading, sedangkan Polymorphism dynamic
-               menggunakan method overriding.
-
-               Method overloading terjadi pada sebuah class yang memiliki  method yang sama Namun
-
-               parameter dan tipe datanya berbeda. Yang perlu diingat untuk method overloading adalah :
-               Dalam satu class, Nama method sama, Tipe data dan parameter berbeda.
-
-               Contoh overloading sebagai berikut :
+                   System.out.println("Tuut, tuut!");
+                 }
+               }
 
 
+               class Car extends Vehicle {
+                 private String modelName = "Mustang";    // Car attribute
+
+                 public static void main(String[] args) {
+
+                   // Membuat Objek myCar
+
+                   Car myCar = new Car();
+
+                     // Memanggil the honk() method (dari class Vehicle) pada objek
+
+                     myCar
+                   myCar.honk();
 
 
+                     // Menampilkan nilai attributee brand (dari class Vehicle) dan
+                     nilai modelNamedari class Car
+                   System.out.println(myCar.brand + " " + myCar.modelName);
+
+                 }
+               }
 
 
+               Bila diperhatikan ada modifier”protected” di Vehicle. Attributee brand di Vehicle
 
+               diatur dengan modifier access “protected”. Jika diatur ke private, class Car tidak
 
-
-
-
-
-
-
-
+               akan dapat diakses.
 
 
 
@@ -207,18 +205,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                   28</code></pre>
+                                                                                                                   26</code></pre>
      	</div>
     
      </div>

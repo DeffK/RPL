@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 7 - Management  Consulting Toolkit</title>
+        <title>Page 7 - Flipbook PBO Kelas XI</title>
 <style type="text/css">
 <!--
 body {
@@ -134,75 +134,84 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=7">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="../../Flipbook PBO.html#p=7">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 7 - Management  Consulting Toolkit</div>
+        <div id="content-top1">Page 7 - Flipbook PBO Kelas XI</div>
         <div id="content-top2">P. 7</div>
      </div>
      <div id="content-middle">
      	
      	  <div class="text-container">
     <div class="use-as-video cc-float-fix">
-      <a style="text-decoration: none;" href="../../index.html#p=7"><img src="../thumb/7.jpg" /></a>
+      <a style="text-decoration: none;" href="../../Flipbook PBO.html#p=7"><img src="../thumb/7.jpg" /></a>
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.  Penyembunyian data dan pengaksesan data.
-
-               Dua hal yang mendasar dalam enkapsulasi adalah adanya data yang disembunyikan dan
-               bagaimana cara untuk mengakses data tersebut.  Information hiding adalah proses
-
-               menyembunyikan informasi dari suatu class sehingga informasi tersebut tidak dapat diakses dari
-
-               luar dengan cara memberikan modifier “private” ketika mendeklarasikan attributee  atau method.
-               Interface to access data adalah cara melakukan perubahan terhadap attributee  yang telah
-
-               disembunyikan. Caranya yaitu dengan membuat interface berupa method untuk menginisialisasi
-               atau merubah nilai dari attributee tersebut.
-
-               class MyClass {
-                   public int myPublicVar = 20;
-                   protected int myProtectedVar = 10;
-                   private int myPrivateVar = 30;
-               }
-               Selanjutnya, buat kelas lain yang akan menampung metode utama. Nantinya juga akan mewarisi
-
-               kelas sebelumnya di sini agar dapat bekerja dengan variabel yang dilindungi.
-
-               public class HelloWorld extends MyClass {
-                   public static void main (String []args){
-                       MyClass myObject = new MyClass(); // membuat objek class
-                       System.out.println(myObject.myPublicVar); //print variabel public
-                       System.out.println(myObject.myProtectedVar); // print variabel
-               protected
-                   }
-               }
-
-               Maka keluaran yang dihasilkan adalah :
-               20
-
-               10
-               Ini berfungsi dengan baik karena myPublicVar bersifat publik. Variabel yang dilindungi
-               ( myProtectedVar ) juga akan muncul karena kita mewarisi kelas lain (dan kedua kelas berada
-               dalam paket yang sama). Sekarang mari kita lihat bagaimana keadaan berubah ketika kita
-               mengakses variabel privat kita secara langsung (myPrivateVar).
-
-               public class HelloWorld extends MyClass { // extending MyClass -- to be able
-               to access protected variables
-                   public static void main(String []args){
-                               MyClass myObject = new MyClass();
-                               System.out.println(myObject.myPrivateVar); // trying to
-               directly access private variable -- will result in error
-                   }
+    <pre style="white-space:pre-line"><code>Enkapsulasi
 
 
 
-                                                                                                                   3</code></pre>
+
+
+
+
+               Deskripsi Materi
+
+               Modul Enkapsulasi ini memaparkan tentang bagaimana cara suatu data dapat
+
+               disembunyikan dan bagaimana data yang disembunyikan itu dapat diakses. Saat
+
+               suatu aplikasi didistribusikan kepada pengguna, maka programmer tidak perlu
+
+               menunjukkan detail kode programnya, tetapi menjelaskan bagaimana cara
+
+               menggunakan aplikasi tersebut. Seperti itulah ilustrasi penggunaan konsep
+
+               encapsulation.
+
+               Kompetensi Dasar
+
+               Mengaplikasikan enkapsulasi pada Java.
+
+               Petunjuk Khusus
+
+               Untuk menerapkan konsep encapsulation dalam membangun suatu program, maka
+
+               Anda harus mendeklarasikan attributee dengan modifier private sehingga attributee
+
+               tersebut tidak dapat diakses sembarangan oleh class lain dan membuat method
+
+               tertentu untuk mengakses attributee tersebut bila diperlukan.
+
+               Tujuan Pembelajaran
+
+                   •  Menerapkan konsep enkapsulasi
+
+                   •  Menyembunyikan data
+
+                   •  Mengakses data yang disembunyikan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                   1</code></pre>
      	</div>
     
      </div>

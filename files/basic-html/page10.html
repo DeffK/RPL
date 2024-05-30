@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 10 - Management  Consulting Toolkit</title>
+        <title>Page 10 - Flipbook PBO Kelas XI</title>
 <style type="text/css">
 <!--
 body {
@@ -134,88 +134,80 @@ function MM_swapImage() { //v3.0
           <td width="35%" style="display:none" align="right"><img src="images/content.png" width="19" height="16" /></td>
           <td width="31%" style="display:none" class="font1"><a href="">Table of Contents</a></td>
           <td width="6%"><img src="images/view.png" width="19" height="16" /></td>
-          <td width="28%" class="font1"><a href="../../index.html#p=10">View Full Version</a></td>
+          <td width="28%" class="font1"><a href="../../Flipbook PBO.html#p=10">View Full Version</a></td>
         </tr>
       </table>
     </div>
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 10 - Management  Consulting Toolkit</div>
+        <div id="content-top1">Page 10 - Flipbook PBO Kelas XI</div>
         <div id="content-top2">P. 10</div>
      </div>
      <div id="content-middle">
      	
      	  <div class="text-container">
     <div class="use-as-video cc-float-fix">
-      <a style="text-decoration: none;" href="../../index.html#p=10"><img src="../thumb/10.jpg" /></a>
+      <a style="text-decoration: none;" href="../../Flipbook PBO.html#p=10"><img src="../thumb/10.jpg" /></a>
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.  Get dan Set (Getter dan Setter)
+    <pre style="white-space:pre-line"><code>2.  Penyembunyian data dan pengaksesan data.
 
-               variabel private hanya dapat diakses di dalam class yang sama (class luar tidak memiliki  akses
-               ke sana). Namun, dimungkinkan untuk mengaksesnya jika menyediakan  methods ”get” and ”set”
+               Dua hal yang mendasar dalam enkapsulasi adalah adanya data yang
 
-               public. Methods ”get” mengembalikan nilai variabel, dan methods ”set” menetapkan nilainya.
+               disembunyikan dan bagaimana cara untuk mengakses data tersebut. Information
 
-               Sintaks keduanya dimulai dengan ”get” atau ”set”, diikuti dengan nama variabel, dengan huruf
-               pertama dalam huruf besar.
+               hiding adalah proses menyembunyikan informasi dari suatu class sehingga
 
+               informasi tersebut tidak dapat diakses dari luar dengan cara memberikan modifier
 
+               “private” ketika mendeklarasikan attributee atau method. Interface to access data
 
+               adalah cara melakukan perubahan terhadap attributee yang telah disembunyikan.
 
+               Caranya yaitu dengan membuat interface berupa method untuk menginisialisasi
 
+               atau merubah nilai dari attributee tersebut.
 
+               class MyClass {
+                   public int myPublicVar = 20;
 
+                   protected int myProtectedVar = 10;
+                   private int myPrivateVar = 30;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                Getter dapat mengizinkan (membaca) akses ke variabel  private.
-               public class Person {
-                 private String name; // private = restricted access
-
-                 // Getter
-                 public String getName() {
-                   return name;
-                 }
-
-                 // Setter
-                 public void setName(String newName) {
-                   this.name = newName;
-                 }
                }
+               Selanjutnya, buat kelas lain yang akan menampung metode utama. Nantinya juga
 
-               Penjelasan :
+               akan mewarisi kelas sebelumnya di sini agar dapat bekerja dengan variabel yang
+
+               dilindungi.
+
+               public class HelloWorld extends MyClass {
+                   public static void main (String []args){
+
+                       MyClass myObject = new MyClass(); // membuat objek class
+                       System.out.println(myObject.myPublicVar); //print variabel
+               public
+
+                       System.out.println(myObject.myProtectedVar); // print variabel
+               protected
+                   }
+
+               }
+               Maka keluaran yang dihasilkan adalah :
+
+               20
+               10
 
 
-               Methods ”get” mengembalikan nilai nama variabel.  Methods ”set” mengambil parameter
-               (newName) dan menugaskannya ke variabel name. Keyword ”this” digunakan untuk merujuk
-               pada objek saat ini. Namun, karena variabel name dideklarasikan sebagai private, kita tidak
-               dapat mengaksesnya dari luar class ini
 
 
 
 
 
 
-
-
-
-                                                                                                                   6</code></pre>
+                                                                                                                   4</code></pre>
      	</div>
     
      </div>
